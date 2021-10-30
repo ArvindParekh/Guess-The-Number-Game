@@ -6,13 +6,13 @@ player1_name = input("Enter a name for Player-1: ")
 player2_name = input("Enter a name for player-2: ")
 predef_num = int(input("Now it's turn for "+player1_name +" to select a number ("+player2_name+", Keep you eyes closed. No cheating!):\n"))
 predef_chance = 7
-print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+player2_name+", It's your turn to play now.")
+print("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"+player2_name+", It's your turn to play now.")
 while(True):
     a = int(input("Enter a number\n"))
     predef_chance = predef_chance-1
 
     if predef_chance == 0 and a == predef_num:
-        print("Congratulations! You have guessed the correct no\n")
+        print("Congratulations! You have guessed the correct number!\n")
         break
     elif predef_chance == 0:
         print("Sorry",player2_name, "you have run out of guesses. Game over!")
@@ -20,22 +20,16 @@ while(True):
         break
     if a > predef_num:
         print("The number is greater, try lowering it")
-        print("You have", predef_chance, "guesses left\n")
+        print("You have", predef_chance, "guesses left...\n")
         continue
     elif a < predef_num:
         print("The number is smaller, try increasing it")
-        print("You have", predef_chance, "guesses left\n")
+        print("You have", predef_chance, "guesses left...\n")
         continue
     else:
-        print("Congratulations",player2_name,"! You have guessed the correct no\n")
+        print("Congratulations",player2_name,"! You have guessed the correct number!\n")
         break
-        # again_ques = input("Do you want to play again?(Y/N)\n")
-        # if again_ques=="Y":
-        #     continue
-        # elif again_ques=="N":
-        #     break
-        # else:
-        #     print("Please enter Y or N only")
+   
         # again_ques = input("Do you want to play again?(Y/N)\n")
         # if again_ques=="Y":
         #     continue
