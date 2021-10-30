@@ -29,13 +29,7 @@ while(True):
     else:
         print("Congratulations",player2_name,"! You have guessed the correct number!\n")
         break
-        # again_ques = input("Do you want to play again?(Y/N)\n")
-        # if again_ques=="Y":
-        #     continue
-        # elif again_ques=="N":
-        #     break
-        # else:
-        #     print("Please enter Y or N only")
+   
         # again_ques = input("Do you want to play again?(Y/N)\n")
         # if again_ques=="Y":
         #     continue
